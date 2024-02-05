@@ -14,9 +14,9 @@
   ]  
 
   let prizes = Promise.all([
-    door === 0 ? prize("classic,car") : prize("goat,animal"),
-    door === 1 ? prize("classic,car") : prize("goat,animal"),
-    door === 2 ? prize("classic,car") : prize("goat,animal"),
+    door === 0 ? prize("sports,car") : prize("farm,goat"),
+    door === 1 ? prize("sports,car") : prize("farm,goat"),
+    door === 2 ? prize("sports,car") : prize("farm,goat"),
   ])
 
   function prize(what: string) {
@@ -73,9 +73,9 @@
 
     door = random(3)
     prizes = Promise.all([
-      door === 0 ? prize("classic,car") : prize("goat,animal"),
-      door === 1 ? prize("classic,car") : prize("goat,animal"),
-      door === 2 ? prize("classic,car") : prize("goat,animal"),
+      door === 0 ? prize("sports,car") : prize("farm,goat"),
+      door === 1 ? prize("sports,car") : prize("farm,goat"),
+      door === 2 ? prize("sports,car") : prize("farm,goat"),
     ])
   }
 
